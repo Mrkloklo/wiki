@@ -1,0 +1,4 @@
+# 数据库连接信息
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/mysql

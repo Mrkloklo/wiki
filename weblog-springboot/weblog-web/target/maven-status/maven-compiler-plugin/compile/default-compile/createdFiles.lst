@@ -1,0 +1,4 @@
+com\mrkloklo\weblog\web\demos\web\BasicController.class
+com\mrkloklo\weblog\web\demos\web\User.class
+com\mrkloklo\weblog\web\WeblogWebApplication.class
+com\mrkloklo\weblog\web\demos\web\PathVariableController.class

@@ -1,0 +1,36 @@
+2025-07-23 14:39:27.085 [main] INFO  com.mrkloklo.weblog.web.WeblogWebApplicationTests - Starting WeblogWebApplicationTests using Java 1.8.0_312 on LAPTOP-S8ABV4IC with PID 15588 (started by mrkloklo in D:\code\weblog\weblog-springboot\weblog-web)
+2025-07-23 14:39:27.086 [main] INFO  com.mrkloklo.weblog.web.WeblogWebApplicationTests - The following profiles are active: prod
+2025-07-23 14:39:28.402 [main] INFO  com.mrkloklo.weblog.web.WeblogWebApplicationTests - Started WeblogWebApplicationTests in 1.673 seconds (JVM running for 2.668)
+2025-07-23 14:39:28.635 [main] INFO  com.mrkloklo.weblog.web.WeblogWebApplicationTests - 这是一行 info 级别的日志
+2025-07-23 14:39:28.635 [main] WARN  com.mrkloklo.weblog.web.WeblogWebApplicationTests - 这是一行 warn 级别的日志
+2025-07-23 14:39:28.635 [main] ERROR com.mrkloklo.weblog.web.WeblogWebApplicationTests - 这是一行 error级别的日志
+2025-07-23 14:39:28.635 [main] INFO  com.mrkloklo.weblog.web.WeblogWebApplicationTests - 这是一行带有占位符日志，坐着：mrkloklok
+[TraceId: ] 2025-07-23 15:37:40.293 [main] INFO  com.mrkloklo.weblog.web.WeblogWebApplication - Starting WeblogWebApplication using Java 1.8.0_312 on LAPTOP-S8ABV4IC with PID 16100 (D:\code\weblog\weblog-springboot\weblog-web\target\classes started by mrkloklo in D:\code\weblog\weblog-springboot)
+[TraceId: ] 2025-07-23 15:37:40.295 [main] INFO  com.mrkloklo.weblog.web.WeblogWebApplication - The following profiles are active: prod
+[TraceId: ] 2025-07-23 15:37:40.833 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[TraceId: ] 2025-07-23 15:37:40.840 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+[TraceId: ] 2025-07-23 15:37:40.840 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+[TraceId: ] 2025-07-23 15:37:40.897 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[TraceId: ] 2025-07-23 15:37:40.897 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 578 ms
+[TraceId: ] 2025-07-23 15:37:41.115 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[TraceId: ] 2025-07-23 15:37:41.120 [main] INFO  com.mrkloklo.weblog.web.WeblogWebApplication - Started WeblogWebApplication in 1.142 seconds (JVM running for 1.825)
+[TraceId: ] 2025-07-23 15:38:45.543 [main] INFO  com.mrkloklo.weblog.web.WeblogWebApplication - Starting WeblogWebApplication using Java 1.8.0_312 on LAPTOP-S8ABV4IC with PID 15828 (D:\code\weblog\weblog-springboot\weblog-web\target\classes started by mrkloklo in D:\code\weblog\weblog-springboot)
+[TraceId: ] 2025-07-23 15:38:45.545 [main] INFO  com.mrkloklo.weblog.web.WeblogWebApplication - The following profiles are active: prod
+[TraceId: ] 2025-07-23 15:38:46.066 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[TraceId: ] 2025-07-23 15:38:46.070 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+[TraceId: ] 2025-07-23 15:38:46.070 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+[TraceId: ] 2025-07-23 15:38:46.121 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[TraceId: ] 2025-07-23 15:38:46.121 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 552 ms
+[TraceId: ] 2025-07-23 15:38:46.321 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[TraceId: ] 2025-07-23 15:38:46.326 [main] INFO  com.mrkloklo.weblog.web.WeblogWebApplication - Started WeblogWebApplication in 1.041 seconds (JVM running for 1.719)
+[TraceId: ] 2025-07-23 15:38:53.597 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[TraceId: ] 2025-07-23 15:38:53.597 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[TraceId: ] 2025-07-23 15:38:53.598 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[TraceId: 34277380-59e5-4b03-8953-a1b91e0a539d] 2025-07-23 15:38:53.700 [http-nio-8080-exec-1] INFO  c.m.weblog.common.aspect.ApiOperationLogAspect - ===========   请求开始：[测试接口]，入参：{"username":"mrkloklo","sex":1}，请求类：com.mrkloklo.weblog.web.controller.TestController，请求方法：test  ===========
+[TraceId: 34277380-59e5-4b03-8953-a1b91e0a539d] 2025-07-23 15:38:53.708 [http-nio-8080-exec-1] INFO  c.m.weblog.common.aspect.ApiOperationLogAspect - ====== 请求结束: [测试接口], 耗时: 19ms, 出参: {"username":"mrkloklo","sex":1} =================================== 
+[TraceId: 59abcd96-1e44-40bf-ac23-38ad34e42cb0] 2025-07-23 15:39:17.991 [http-nio-8080-exec-2] INFO  c.m.weblog.common.aspect.ApiOperationLogAspect - ===========   请求开始：[测试接口]，入参：{"username":"mrkloklo","sex":1}，请求类：com.mrkloklo.weblog.web.controller.TestController，请求方法：test  ===========
+[TraceId: 59abcd96-1e44-40bf-ac23-38ad34e42cb0] 2025-07-23 15:39:17.991 [http-nio-8080-exec-2] INFO  c.m.weblog.common.aspect.ApiOperationLogAspect - ====== 请求结束: [测试接口], 耗时: 0ms, 出参: {"username":"mrkloklo","sex":1} =================================== 
+[TraceId: 139d882b-fc2e-4af6-90ce-6a33cc3fec75] 2025-07-23 15:39:21.562 [http-nio-8080-exec-3] INFO  c.m.weblog.common.aspect.ApiOperationLogAspect - ===========   请求开始：[测试接口]，入参：{"username":"mrkloklo2","sex":1}，请求类：com.mrkloklo.weblog.web.controller.TestController，请求方法：test  ===========
+[TraceId: 139d882b-fc2e-4af6-90ce-6a33cc3fec75] 2025-07-23 15:39:21.562 [http-nio-8080-exec-3] INFO  c.m.weblog.common.aspect.ApiOperationLogAspect - ====== 请求结束: [测试接口], 耗时: 0ms, 出参: {"username":"mrkloklo2","sex":1} =================================== 
+[TraceId: 83085a13-84dc-4fc3-b7f4-c8244df77bf2] 2025-07-23 15:40:42.006 [http-nio-8080-exec-5] INFO  c.m.weblog.common.aspect.ApiOperationLogAspect - ===========   请求开始：[测试接口]，入参：{"username":"mrkloklo3","sex":1}，请求类：com.mrkloklo.weblog.web.controller.TestController，请求方法：test  ===========
+[TraceId: 83085a13-84dc-4fc3-b7f4-c8244df77bf2] 2025-07-23 15:40:42.007 [http-nio-8080-exec-5] INFO  c.m.weblog.common.aspect.ApiOperationLogAspect - ====== 请求结束: [测试接口], 耗时: 1ms, 出参: {"username":"mrkloklo3","sex":1} =================================== 
