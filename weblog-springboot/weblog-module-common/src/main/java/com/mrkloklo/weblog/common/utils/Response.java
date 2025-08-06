@@ -2,6 +2,7 @@ package com.mrkloklo.weblog.common.utils;
 
 import java.io.Serializable;
 
+import com.mrkloklo.weblog.common.exception.BizException;
 import lombok.Data;
 
 /**
@@ -46,16 +47,16 @@ public class Response<T> implements Serializable {
         response.setCustom(ResponseCustom.setCustom());
         return response;
     }
-    public static <T> Response<T> fail(String m) {
+    public static <T> Response<T> fail(BizException bizException) {
         Response<T> response = new Response<T>();
-        response.setStatus(Responsestatus.fail(m));
+        response.setStatus(Responsestatus.fail(bizException));
         response.setCustom(ResponseCustom.setCustom());
         return response;
     }
 
-    public static <T> Response<T> fail(String m, T d) {
+    public static <T> Response<T> fail(BizException bizException, T d) {
         Response<T> response = new Response<T>();
-        response.setStatus(Responsestatus.fail(m));
+        response.setStatus(Responsestatus.fail(bizException));
         response.setCustom(ResponseCustom.setCustom(d));
         return response;
     }

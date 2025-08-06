@@ -1,0 +1,45 @@
+package com.mrkloklo.weblog.common.exception;
+
+
+import com.mrkloklo.weblog.common.enums.ResponseCodeEnum;
+import com.mrkloklo.weblog.common.utils.Response;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import javax.servlet.http.HttpServletRequest;
+
+/**
+ * @author: gujhao
+ * @date: 2025-08-06 17:04
+ * @description:全局异常类处理
+ **/
+@ControllerAdvice
+@Slf4j
+public class GlobalExceptionHandler {
+
+    /**
+     * 捕获自定义业务异常
+     * @return
+     */
+    @ExceptionHandler({BizException.class})
+    @ResponseBody
+    public Response<Object> handleException(HttpServletRequest r, BizException e){
+        log.warn("{} request faile,errorCode:{},errorMessage:{}",r.getRequestURI(),e.getErrorCode(),e.getErrorMessage());
+        return Response.fail(e);
+    }
+
+    /**
+     * 其他类型异常
+     * @param request
+     * @param e
+     * @return
+     */
+    @ExceptionHandler({ Exception.class })
+    @ResponseBody
+    public Response<Object> handleOtherException(HttpServletRequest request, Exception e) {
+        log.error("{} request error, ", request.getRequestURI(), e);
+        return Response.fail();
+    }
+}

@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="917e8421-f8ad-4466-88c4-1f54c01fe94e" name="更改" comment="123">
-      <change afterPath="$PROJECT_DIR$/weblog-module-common/src/main/java/com/mrkloklo/weblog/common/utils/Response.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weblog-module-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/weblog-module-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weblog-module-common/src/main/java/com/mrkloklo/weblog/common/exception/BaseExceptionInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/weblog-module-common/src/main/java/com/mrkloklo/weblog/common/exception/BaseExceptionInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weblog-module-common/src/main/java/com/mrkloklo/weblog/common/utils/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/weblog-module-common/src/main/java/com/mrkloklo/weblog/common/utils/Response.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weblog-module-common/src/main/java/com/mrkloklo/weblog/common/utils/Responsestatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/weblog-module-common/src/main/java/com/mrkloklo/weblog/common/utils/Responsestatus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weblog-web/src/main/java/com/mrkloklo/weblog/web/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/weblog-web/src/main/java/com/mrkloklo/weblog/web/controller/TestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weblog-web/target/classes/com/mrkloklo/weblog/web/controller/TestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/weblog-web/target/classes/com/mrkloklo/weblog/web/controller/TestController.class" afterDir="false" />
     </list>
@@ -20,6 +23,7 @@
       <list>
         <option value="spring-beans.schema" />
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -157,7 +161,8 @@
       <workItem from="1753686742925" duration="8000" />
       <workItem from="1754292687517" duration="1237000" />
       <workItem from="1754293947664" duration="3781000" />
-      <workItem from="1754382270026" duration="3803000" />
+      <workItem from="1754382270026" duration="4070000" />
+      <workItem from="1754444288565" duration="5733000" />
     </task>
     <servers />
   </component>

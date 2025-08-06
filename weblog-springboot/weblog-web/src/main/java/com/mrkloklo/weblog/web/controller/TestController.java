@@ -2,7 +2,6 @@ package com.mrkloklo.weblog.web.controller;
 
 import java.util.stream.Collectors;
 
-import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
 import org.springframework.validation.annotation.Validated;
@@ -11,6 +10,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.mrkloklo.weblog.common.aspect.ApiOperationLog;
+import com.mrkloklo.weblog.common.enums.ResponseCodeEnum;
+import com.mrkloklo.weblog.common.exception.BizException;
 import com.mrkloklo.weblog.common.utils.Response;
 import com.mrkloklo.weblog.web.model.User;
 
@@ -39,8 +40,25 @@ public class TestController {
             String errorMsg = bindingResult.getFieldErrors().stream().map(FieldError::getDefaultMessage)
                 .collect(Collectors.joining(","));
 
-            return Response.fail(errorMsg);
+            // return Response.fail(errorMsg);
         }
-        return Response.success("请求成功",user);
+        return Response.success("请求成功", user);
+    }
+
+    @PostMapping("/testexception")
+    @ApiOperationLog(description = "测试全局抛出异常")
+    public Response testexception(@RequestBody @Validated User user, BindingResult bindingResult) {
+        if (bindingResult.hasErrors()) {
+            // 手动抛异常，入参是前面定义好的异常码枚举，返参统一交给全局异常处理器搞定
+            throw new BizException(ResponseCodeEnum.PRODUCT_NOT_FOUND);
+        }
+        return Response.success("请求成功", user);
+    }
+
+    @PostMapping("/testexception2")
+    @ApiOperationLog(description = "测试全局抛出其他异常")
+    public Response testexception2(@RequestBody @Validated User user, BindingResult bindingResult) {
+       int i = 1/0;
+        return Response.success("请求成功", user);
     }
 }

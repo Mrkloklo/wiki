@@ -9,5 +9,4 @@ package com.mrkloklo.weblog.common.exception;
 public interface BaseExceptionInterface {
   String getErrorCode();
   String getErrorMessage();
-
 }
