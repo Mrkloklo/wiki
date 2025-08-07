@@ -61,4 +61,11 @@ public class TestController {
        int i = 1/0;
         return Response.success("请求成功", user);
     }
+
+    @PostMapping("/testexception3")
+    @ApiOperationLog(description = "测试全局抛出其他异常+参数校验")
+    public Response testexception3(@RequestBody @Validated User user) {
+
+        return Response.success("请求成功", user);
+    }
 }

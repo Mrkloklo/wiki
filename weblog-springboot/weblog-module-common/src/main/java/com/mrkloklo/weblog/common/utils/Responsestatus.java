@@ -46,4 +46,11 @@ public class Responsestatus<T> implements Serializable {
         responsestatus.setMessage(bizException.getErrorMessage());
         return responsestatus;
     }
+
+    public static <T> Responsestatus<T>  fail(String errcode, String errMsg) {
+        Responsestatus<T> responsestatus = new Responsestatus<T>();
+        responsestatus.setCode(errcode);
+        responsestatus.setMessage(errMsg);
+        return responsestatus;
+    }
 }

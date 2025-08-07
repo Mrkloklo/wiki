@@ -60,4 +60,11 @@ public class Response<T> implements Serializable {
         response.setCustom(ResponseCustom.setCustom(d));
         return response;
     }
+
+    public static <T> Response<T> fail(String errcode,String errMsg) {
+        Response<T> response = new Response<T>();
+        response.setStatus(Responsestatus.fail(errcode,errMsg));
+        response.setCustom(ResponseCustom.setCustom());
+        return response;
+    }
 }
